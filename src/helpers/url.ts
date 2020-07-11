@@ -1,4 +1,4 @@
-import { isDate, isPlainObject } from "./utils"
+import { isDate, isPlainObject } from "./util"
 
 function encode(val: string): string {
     return encodeURIComponent(val)
