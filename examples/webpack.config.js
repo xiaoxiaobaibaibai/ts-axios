@@ -1,13 +1,12 @@
 const fs = require('fs')
 const path = require('path')
 const webpack = require('webpack')
-
 module.exports = {
   mode: 'development',
 
   /**
-   * 在 examples 目录下建多个子目录
-   * 不同的 demo 放到不同的子目录中
+   * 我们会在 examples 目录下建多个子目录
+   * 我们会把不同章节的 demo 放到不同的子目录中
    * 每个子目录的下会创建一个 app.ts
    * app.ts 作为 webpack 构建的入口文件
    * entries 收集了多目录个入口文件，并且每个入口还引入了一个用于热更新的文件
